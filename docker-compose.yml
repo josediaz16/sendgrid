@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    build: .
+    command: echo 'hola'
+    environment:
+      - SENDGRID_API_KEY=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
+    volumes:
+      - .:/app
+
